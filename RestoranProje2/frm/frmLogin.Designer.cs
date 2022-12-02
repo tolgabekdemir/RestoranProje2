@@ -36,6 +36,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnGiris = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblPcAdi = new System.Windows.Forms.Label();
+            this.lblIPAdresi = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -48,7 +51,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(64)))), ((int)(((byte)(112)))));
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 60);
+            this.label1.Size = new System.Drawing.Size(200, 59);
             this.label1.TabIndex = 0;
             this.label1.Text = "Giriş Yap";
             // 
@@ -81,7 +84,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(369, 46);
             this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // txtSifre
             // 
@@ -130,6 +132,43 @@
             this.btnGiris.TabIndex = 3;
             this.btnGiris.Text = "Giris Yap";
             this.btnGiris.UseVisualStyleBackColor = false;
+            this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(64)))), ((int)(((byte)(112)))));
+            this.label4.Location = new System.Drawing.Point(18, 331);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 24);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "PcAdi";
+            // 
+            // lblPcAdi
+            // 
+            this.lblPcAdi.AutoSize = true;
+            this.lblPcAdi.BackColor = System.Drawing.Color.Transparent;
+            this.lblPcAdi.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblPcAdi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(64)))), ((int)(((byte)(112)))));
+            this.lblPcAdi.Location = new System.Drawing.Point(18, 331);
+            this.lblPcAdi.Name = "lblPcAdi";
+            this.lblPcAdi.Size = new System.Drawing.Size(55, 24);
+            this.lblPcAdi.TabIndex = 2;
+            this.lblPcAdi.Text = "PcAdi";
+            // 
+            // lblIPAdresi
+            // 
+            this.lblIPAdresi.AutoSize = true;
+            this.lblIPAdresi.BackColor = System.Drawing.Color.Transparent;
+            this.lblIPAdresi.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblIPAdresi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(64)))), ((int)(((byte)(112)))));
+            this.lblIPAdresi.Location = new System.Drawing.Point(18, 363);
+            this.lblIPAdresi.Name = "lblIPAdresi";
+            this.lblIPAdresi.Size = new System.Drawing.Size(44, 24);
+            this.lblIPAdresi.TabIndex = 2;
+            this.lblIPAdresi.Text = "PcIp";
             // 
             // frmLogin
             // 
@@ -139,6 +178,9 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(409, 466);
             this.Controls.Add(this.btnGiris);
+            this.Controls.Add(this.lblIPAdresi);
+            this.Controls.Add(this.lblPcAdi);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
@@ -146,6 +188,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.panel1.ResumeLayout(false);
@@ -167,6 +210,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnGiris;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblPcAdi;
+        private System.Windows.Forms.Label lblIPAdresi;
     }
 }
 

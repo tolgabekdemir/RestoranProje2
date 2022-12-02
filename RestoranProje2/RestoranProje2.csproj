@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,15 +47,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmLogin.cs">
+    <Compile Include="classlar\cProvider.cs" />
+    <Compile Include="classlar\Crud.cs" />
+    <Compile Include="classlar\DbYonetimi.cs" />
+    <Compile Include="classlar\tablolar\cFis.cs" />
+    <Compile Include="classlar\tablolar\cLog.cs" />
+    <Compile Include="classlar\tablolar\cFisSatir.cs" />
+    <Compile Include="classlar\tablolar\cKategori.cs" />
+    <Compile Include="classlar\tablolar\cPersonel.cs" />
+    <Compile Include="classlar\tablolar\cRol.cs" />
+    <Compile Include="classlar\tablolar\cUrun.cs" />
+    <Compile Include="classlar\Veritabani.cs" />
+    <Compile Include="frm\frmAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
+    <Compile Include="frm\frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmGarson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frmGarson.Designer.cs">
+      <DependentUpon>frmGarson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmMudur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frmMudur.Designer.cs">
+      <DependentUpon>frmMudur.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmLogin.resx">
+    <EmbeddedResource Include="frm\frmGarson.resx">
+      <DependentUpon>frmGarson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -66,6 +99,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -79,5 +115,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

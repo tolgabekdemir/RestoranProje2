@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RestoranProje2.frm;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace RestoranProje2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            Application.Run(new frmGarson());
         }
     }
 }
